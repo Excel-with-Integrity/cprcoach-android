@@ -10,6 +10,18 @@
     <string name="scan_devices">Scan Devices</string>
     <string name="tare">Tare</string>
 
+    <string name="text_settings">Settings</string>
+    <string name="text_practice">Practice</string>
+    <string name="text_about">About</string>
     <string name="disconnected">Disconnected</string>
+    <string name="todo">TODO</string>
+    <string name="start">Start</string>
+    <string name="next">Continue</string>
+    <string name="button">Button</string>
+    <string name="welcome_to_cpr_training">Welcome to CPR Training</string>
+    <string name="about_cpr">About CPR</string>
+    <string name="cardiopulmonary_resuscitation">(cardiopulmonary resuscitation)</string>
+    <string name="every_year_about_600_000_cases_of_cardiac_arrest_happen_in_the_u_s_of_which_395_000_cases_occur_outside_a_hospital_setting_research_has_indicated_that_the_amount_of_time_between_cardiac_arrest_and_cpr_commencing_is_directly_correlated_to_survival_rates_the_problem_less_than_3_of_the_u_s_population_receives_cpr_training_every_year_we_built_this_app_with_the_purpose_of_helping_people_learn_and_practice_effective_cpr_techniques">Every year, about 600,000 cases of cardiac arrest happen in the U.S., of which 395,000 cases occur outside a hospital setting. Research has indicated that the amount of time between cardiac arrest and CPR commencing is directly correlated to survival rates. The problem: less than 3% of the U.S. population receives CPR training every year. We built this app with the purpose of helping people learn and practice effective CPR techniques.</string>
+    <string name="source_http_www8_nationalacademies_org_onpinews_newsitem_aspx_recordid_21723">(Source: http://www8.nationalacademies.org/onpinews/newsitem.aspx?RecordID=21723)</string>
 
 </resources>

@@ -1,119 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:background="@drawable/titlebackground"
+        android:orientation="vertical"
+        tools:context="com.example.bluetooth.MainActivity">
 
-    <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:id="@+id/recyclerView"
-            android:layout_height="100dp"/>
 
-    <TextView
-            android:background="@color/colorPrimary"
-            android:id="@+id/pressureChangedTextView1"
-            android:layout_margin="8dp"
-            android:padding="8dp"
-            android:layout_below="@id/recyclerView"
-            android:textColor="@android:color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="42dp" />
 
-    <TextView
-            android:background="@color/colorPrimary"
-            android:id="@+id/pressureChangedTextView2"
-            android:textColor="@android:color/white"
-            android:layout_margin="8dp"
-            android:layout_toEndOf="@id/pressureChangedTextView1"
-            android:padding="8dp"
-            android:layout_width="wrap_content"
-            android:layout_below="@id/recyclerView"
-            android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_mono_medium"
+                android:text="@string/welcome_to_cpr_training"
+                android:textAlignment="center"
+                android:textColor="#8B6969"
+                android:textSize="45sp"
+                android:textStyle="bold" />
 
-    <Button
-            android:background="@color/colorPrimary"
-            android:layout_margin="8dp"
-            android:padding="8dp"
-            android:id="@+id/connectButton"
-            android:textColor="@android:color/white"
-            android:text="@string/connect"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/pressureChangedTextView1"/>
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="398dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/titlepng" />
 
-    <Button
-            android:background="@color/colorAccent"
-            android:layout_margin="8dp"
-            android:id="@+id/disconnectButton"
-            android:padding="8dp"
-            android:textColor="@android:color/white"
-            android:text="@string/disconnect"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/connectButton"
-            android:layout_below="@id/pressureChangedTextView1"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
 
-    <Button
-            android:background="@color/colorAccent"
-            android:layout_margin="8dp"
-            android:padding="8dp"
-            android:id="@+id/sendStopCommandButton"
-            android:textColor="@android:color/white"
-            android:text="@string/stop_command"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/connectButton"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:orientation="horizontal">
 
-    <Button
-            android:background="@color/colorPrimary"
-            android:layout_margin="8dp"
-            android:id="@+id/abortStopCommandButton"
-            android:padding="8dp"
-            android:textColor="@android:color/white"
-            android:text="@string/abort_stop_command"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/sendStopCommandButton"
-            android:layout_below="@id/connectButton"/>
+                <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
 
-    <Button
-            android:background="@color/colorPrimaryDark"
-            android:layout_marginTop="8dp"
-            android:padding="8dp"
-            android:layout_marginStart="8dp"
-            android:id="@+id/startIsometricButton"
-            android:textColor="@android:color/white"
-            android:text="@string/start_isometric"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/abortStopCommandButton"/>
+                <Button
+                        android:id="@+id/contButton"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_border"
+                        android:fontFamily="@font/roboto_mono_medium"
+                        android:text="@string/next"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
 
-    <Button
-            android:background="@color/colorPrimaryDark"
-            android:layout_marginTop="8dp"
-            android:padding="8dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:id="@+id/tareButton"
-            android:layout_toEndOf="@id/startIsometricButton"
-            android:textColor="@android:color/white"
-            android:text="@string/tare"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/abortStopCommandButton"/>
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
 
-    <Button
-            android:background="@color/colorPrimaryDark"
-            android:layout_marginTop="8dp"
-            android:padding="8dp"
-            android:layout_marginEnd="8dp"
-            android:id="@+id/scanDevices"
-            android:layout_toEndOf="@id/tareButton"
-            android:textColor="@android:color/white"
-            android:text="@string/scan_devices"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/abortStopCommandButton"/>
-</RelativeLayout>
+        </LinearLayout>
+
+</LinearLayout>
+

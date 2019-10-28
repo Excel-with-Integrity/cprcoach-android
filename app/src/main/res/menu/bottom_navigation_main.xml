@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/action_settings"
+            android:enabled="true"
+            android:icon="@drawable/ic_action_settings"
+            android:title="@string/text_settings"
+            app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_practice"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_practice"
+        android:title="@string/text_practice"
+        app:showAsAction="ifRoom" />
+
+    <item
+            android:id="@+id/action_about"
+            android:enabled="true"
+            android:icon="@drawable/ic_action_about"
+            android:title="@string/text_about"
+            app:showAsAction="ifRoom" />
+</menu>

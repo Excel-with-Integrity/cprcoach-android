@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D8FFFFFF"
+        tools:context="com.example.bluetooth.MainActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="93dp" />
+
+        <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_mono_medium"
+                android:text="@string/about_cpr"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_mono_medium"
+                android:text="@string/cardiopulmonary_resuscitation"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="61dp" />
+
+        <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_mono_medium"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/every_year_about_600_000_cases_of_cardiac_arrest_happen_in_the_u_s_of_which_395_000_cases_occur_outside_a_hospital_setting_research_has_indicated_that_the_amount_of_time_between_cardiac_arrest_and_cpr_commencing_is_directly_correlated_to_survival_rates_the_problem_less_than_3_of_the_u_s_population_receives_cpr_training_every_year_we_built_this_app_with_the_purpose_of_helping_people_learn_and_practice_effective_cpr_techniques"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="142dp" />
+
+        <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_mono_medium"
+                android:text="We Are Proud to Present"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="42dp" />
+
+        <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_mono_medium"
+                android:text="CPR Coach"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>

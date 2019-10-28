@@ -36,7 +36,6 @@ class DeviceAdapter(private val activity: Activity) : RecyclerView.Adapter<Devic
 
     override fun onBindViewHolder(holder: DeviceRecyclerViewHolder, position: Int) {
         val device = list[position]
-
         if (positionSelected == position) {
             holder.deviceName.setBackgroundColor(ContextCompat.getColor(activity, R.color.colorPrimary))
         } else {
@@ -45,7 +44,7 @@ class DeviceAdapter(private val activity: Activity) : RecyclerView.Adapter<Devic
         holder.deviceName.text = device.device.name
 
         holder.deviceName.setOnClickListener {
-            (activity as MainActivity).deviceSelected(device)
+            (activity as SettingActivity).deviceSelected(device)
             positionSelected = holder.adapterPosition
             notifyDataSetChanged()
         }
